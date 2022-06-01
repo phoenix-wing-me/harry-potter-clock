@@ -1,0 +1,47 @@
+body{
+    font-family: LumosLatin;
+    font-size:130%;
+    text-align: center;
+    margin: 0;
+}
+@font-face {
+    font-family: HarryPotter;
+    src: url(fonts/HarryP-MVZ6w.ttf);
+}
+@font-face {
+    font-family: LumosLatin;
+    src: url(fonts/Lumoslatino-XA8K.ttf);
+}
+h1{
+    font-family: HarryPotter;
+    font-size: 350%;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+label{
+    font-family: HarryPotter;
+}
+#currentTime{
+    font-size: 200%;
+    font-weight: bold;
+}
+p,button{
+    font-family: LumosLatin;
+}
+#image{
+    margin:0 auto;
+    padding:20px 40px;
+    width:625px;
+    height:400px;
+    background: url('images/Hogwarts-Logo.jpg') no-repeat center;
+}
+#partyTime{
+    background: grey;
+    border:1px solid grey;
+    border-radius: 10px;
+    padding:5px;
+    cursor: pointer;
+}
+#console{
+    font-size:150%;
+}
