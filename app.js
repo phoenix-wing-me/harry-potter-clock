@@ -49,45 +49,45 @@ function printAndStuff(){
     var time = new Date();
     var currentHour = time.getHours();
     var currentMinutes = time.getMinutes();
-    console.log(`wakeUpTime = ${wakeUpTime.value}`);
+    /*console.log(`wakeUpTime = ${wakeUpTime.value}`);
     console.log(`lunchTime = ${lunchTime.value}`);
     console.log(`napTime = ${napTime.value}`);
-    console.log(`napTime = ${partyTimeValue}`);
+    console.log(`napTime = ${partyTimeValue}`);*/
     if(partyTimeValue == true){
-        console.log("Let's Party baby!!");
-        consoleLink.textContent = "Let's Party baby!!🥳";
+        //console.log("Let's Party!!");
+        consoleLink.textContent = "Let's Party!!🥳";
         imageBlock.style.background="url('images/party.jpg') no-repeat center" ;
     }
     else{
         //console.log("current Hour" + currentHour);
         if(wakeUpTime.value == currentHour){
-            console.log("Its Wake Up Time! 좋은 하루 되세요");
+            //console.log("Its Wake Up Time! 좋은 하루 되세요");
             consoleLink.innerHTML = "Its Wake Up Time! 좋은 하루 되세요";
             imageBlock.style.background="url('images/wakeup.jpg') no-repeat center" ;
         }
         else if(lunchTime.value == currentHour){
-            console.log("Lunch Time! 많이 먹다");
+            //console.log("Lunch Time! 많이 먹다");
             consoleLink.textContent = "Lunch Time! 많이 먹다";
             imageBlock.style.background="url('images/lunch.jpg') no-repeat center" ;
         }
         else if(napTime.value == currentHour){
-            console.log("Its Nap time! 잘 자");
+            //console.log("Its Nap time! 잘 자");
             consoleLink.textContent ="Its Nap time! 잘 자";
             imageBlock.style.background="url('images/nap.jpg') no-repeat center" ;
         }
         else{
             if(currentHour>=0 && (currentHour<=11 && currentMinutes<=59)){
-                console.log("Good morning");
+                //console.log("Good morning");
                 consoleLink.textContent ="Good morning!🌞";
                 imageBlock.style.background="url('images/morning.jpg') no-repeat center" ;
             }
             else if(currentHour>=12 && (currentHour<=4 && currentMinutes<=59)){
-                console.log("Good afternoon");
+                //console.log("Good afternoon");
                 consoleLink.textContent ="Good afternoon";
                 imageBlock.style.background="url('images/afternoon.jpg') no-repeat center" ;
             }
             else{
-                console.log("Good night");
+                //console.log("Good night");
                 consoleLink.textContent ="Good night!🌙";
                 imageBlock.style.background="url('images/night.jpg') no-repeat center" ;
             }
